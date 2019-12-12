@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TooltipProgressBar">
+        <attr name="optionLeftText" format="string"/>
+        <attr name="optionRightText" format="string"/>
+        <attr name="optionTopTooltipText" format="string" />
+        <attr name="optionBottomTooltipText" format="string" />
+        <attr name="optionProgressTotalSteps" format="integer" />
+        <attr name="optionProgressFillSteps" format="integer" />
+        <attr name="optionBottomTooltipSteps" format="integer" />
+        <attr name="optionTopTooltipColor" />
+        <attr name="optionBottomTooltipColor" />
+        <attr name="optionProgressFillColor" />
+    </declare-styleable>
+</resources>

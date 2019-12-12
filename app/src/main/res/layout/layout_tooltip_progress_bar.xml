@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:id="@+id/tool_tip_progress_bar"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ProgressBar
+        android:id="@+id/option_progress_bar"
+        android:layout_width="236dp"
+        android:layout_height="@dimen/margin_8"
+        android:progressDrawable="@drawable/progress_bar_custom"
+        style="?android:attr/progressBarStyleHorizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_tooltip_arrow"
+        tools:max="100"
+        tools:progress="75" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/option_left_text"
+        app:layout_constraintRight_toLeftOf="@id/option_progress_bar"
+        app:layout_constraintTop_toTopOf="@id/option_progress_bar"
+        app:layout_constraintBottom_toBottomOf="@id/option_progress_bar"
+        android:textSize="@dimen/text_16"
+        android:textColor="@color/black_9e"
+        android:layout_margin="@dimen/margin_8"
+        tools:text="75%"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/option_right_text"
+        app:layout_constraintLeft_toRightOf="@id/option_progress_bar"
+        app:layout_constraintTop_toTopOf="@id/option_progress_bar"
+        app:layout_constraintBottom_toBottomOf="@id/option_progress_bar"
+        android:textSize="16sp"
+        android:textColor="@color/black_9e"
+        android:layout_margin="8dp"
+        tools:text="100%"/>
+
+    <TextView
+        android:id="@+id/top_tooltip_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/top_tooltip_arrow"
+        app:layout_constraintRight_toRightOf="@id/top_tooltip_arrow"
+        android:background="@drawable/tooltip_drawable"
+        android:textAlignment="center"
+        android:paddingLeft="@dimen/margin_12"
+        android:paddingRight="@dimen/margin_12"
+        android:paddingTop="@dimen/margin_4"
+        android:paddingBottom="@dimen/margin_4"
+        android:textColor="@color/black_21"
+        android:textSize="@dimen/text_22"
+        tools:text="You: 75 Jobs"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <View
+        android:id="@+id/top_tooltip_arrow"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:background="@drawable/tooltip_arrow"
+        app:layout_constraintTop_toBottomOf="@id/top_tooltip_head"
+        app:layout_constraintLeft_toLeftOf="@id/option_progress_bar"
+        app:layout_constraintRight_toRightOf="@id/option_progress_bar"
+        android:translationY="-1dp"
+        android:translationX="-4dp"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+
+    <TextView
+        android:id="@+id/bottom_tooltip_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bottom_tooltip_arrow"
+        app:layout_constraintLeft_toLeftOf="@id/bottom_tooltip_arrow"
+        app:layout_constraintRight_toRightOf="@id/bottom_tooltip_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/tooltip_drawable"
+        android:textAlignment="center"
+        android:paddingLeft="@dimen/margin_12"
+        android:paddingRight="@dimen/margin_12"
+        android:paddingTop="@dimen/margin_4"
+        android:paddingBottom="@dimen/margin_4"
+        android:textColor="@color/black_21"
+        android:textSize="@dimen/text_16"
+        tools:text="Gold: 100 Jobs"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <View
+        android:id="@+id/bottom_tooltip_arrow"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:background="@drawable/tooltip_arrow"
+        app:layout_constraintTop_toBottomOf="@id/option_progress_bar"
+        app:layout_constraintLeft_toLeftOf="@id/option_progress_bar"
+        app:layout_constraintRight_toRightOf="@id/option_progress_bar"
+        android:rotation="180"
+        android:translationX="@dimen/margin_4"
+        android:translationY="@dimen/margin_1"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
