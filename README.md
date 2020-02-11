@@ -3,6 +3,8 @@ Android library for adding a progress bar with tooltips in your projects
 
 <img src="/screenshots/ss.png" width="450" title="TooltipProgressBar Screenshot">
 
+[Here](https://medium.com/@anuj55149/tooltipprogressbar-android-custom-view-b220720e3ca2) is the Medium blog to learn more about this library.
+
 # Usage:
 
 XML:
