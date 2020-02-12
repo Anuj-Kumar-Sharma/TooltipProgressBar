@@ -16,7 +16,7 @@ XML:
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:optionTopTooltipText="Your: 45%"
+        app:optionTopTooltipText="You: 45%"
         app:optionBottomTooltipText="Gold: 80%"
         app:optionTopTooltipColor="@color/red"
         app:optionBottomTooltipColor="@color/golden"
@@ -27,6 +27,22 @@ XML:
         app:optionBottomTooltipSteps="80"
         app:optionProgressTotalSteps="100"/>
 ```
+
+# Customizations:
+
+* Related to tool tips
+	* ```app:optionTopTooltipText``` For top tooltip text
+	* ```app:optionBottomTooltipText``` For bottom tooltip text
+	* ```app:optionTopTooltipColor``` For top tooltip text color
+	* ```app:optionBottomTooltipColor``` For bottom tooltip text color
+	
+* Related to the progressbar	
+	* ```app:optionLeftText``` For text on left side of progressbar
+	* ```app:optionRightText``` For text on right side of progressbar
+	* ```app:optionProgressFillColor``` For progressbar fill color
+	* ```app:optionProgressFillSteps``` For fill steps in progressbar, top tooltip will point at this position
+	* ```app:optionBottomTooltipSteps``` For bottom tooltip, bottom tooltip will point at this position 
+	* ```app:optionProgressTotalSteps``` For specifying the total number of steps in the progressbar
 
 # Download
 [ ![Download](https://api.bintray.com/packages/androidville/PulsatingButton/pulsatingbutton/images/download.svg) ](https://bintray.com/beta/#/anujkumarsharma/TooltipProgressBar/tooltipprogressbar/)
